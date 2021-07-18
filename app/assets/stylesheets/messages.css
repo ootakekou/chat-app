@@ -11,13 +11,41 @@ display: flex;
 .side-bar-header {
   height: 100px;
   padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
 }
+
+.side-ber-name a{
+  font-size: 16px;
+  color: #FAFAFA;
+  text-decoration: none;
+}
+
+.side-ber-new a{
+  border: 1px solid lightblue;
+  padding: 14px;
+  color: deepskyblue;
+  font-size: 10px;
+  text-emphasis: none;
+}
+
 .rooms {
   background-color: #2F3E51;
   height: calc(100vh - 100px);
   padding: 0 20px;
+  overflow: scroll;
 }
 
+.room{
+padding: 20px 0 40px;
+}
+
+.room-name a{
+  text-decoration: none;
+  color: white;
+}
 .chat{
   width: calc(100vw - 300px);
   background-color: #ffffff;
