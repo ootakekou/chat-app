@@ -1,9 +1,7 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
   devise_for :users
-=======
-  get 'messages/index'
->>>>>>> parent of ae3ef29 (usersテーブルの作成)
-  root to: "messages#index"
+  get 'rooms/index'
+  root to: "rooms#index"
   resources :users, only: [:edit, :update]
+  resources :rooms, only: [:new, :create]
 end
